@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Login</title>
+    <link rel="stylesheet" href="stylesheet/index.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="col-md-12 text-center">
+            <h1 class="my-5">Login</h1>
+        </div>
+        <form class="col-md-12" method="post" action="/">
+           <% include ./partials/partials/messages.ejs %>
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="text" class="form-control" id="user" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <input type="password" class="form-control" id="pass" name="password" required>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" name="remember">
+                        <label for="remember"><small>Remember your password</small></label>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-check-label" for=""><a href="/register">Create new account</a></label>
+                    </div>
+                    <button class="btn btn-sm btn-outline-primary" id="btn">Sign in</button>
+        </form>
+
+    </div>
+</body>
+
+</html>

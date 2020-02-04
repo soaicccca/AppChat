@@ -1,0 +1,20 @@
+.anh {
+    width: 100%;
+    height: auto;
+}
+
+.anh img {
+    width: 100%;
+    height: auto;
+}
+
+.wrap {
+    border: 0.6px solid rgb(157, 240, 146);
+    width: 40%;
+    height: 785px;
+    margin: 0 auto;
+    background: rgb(238, 248, 250);
+    color: rgb(121, 116, 116);
+    border-radius: 20px;
+    overflow: auto;
+}
